@@ -12,9 +12,9 @@ releases:
   - name: rbac.create
     value: false
 - name: postgresql
-    namespace: default
-    chart: bitnami/postgresql
-    values:
-      - auth:
-          username: my-user
-          password: my-password
+  namespace: default
+  chart: bitnami/postgresql
+  values:
+    - auth:
+        username: my-user
+        password: my-password
