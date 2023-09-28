@@ -15,7 +15,8 @@ releases:
   namespace: nginx
   chart: oci://registry-1.docker.io/bitnamicharts/nginx
   values:
-    controller.replicaCount: 2
+    - controller:
+        replicaCount: 2
 # - name: postgresql
 #   namespace: default
 #   chart: bitnami/postgresql
