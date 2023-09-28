@@ -17,7 +17,7 @@ releases:
   createNamespace: true 
   chart: bitnami/nginx
   set:
-  - name: controller.replicaCount
+  - name: replicaCount
     value: 2
 # - name: postgresql
 #   namespace: default
