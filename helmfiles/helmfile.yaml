@@ -6,6 +6,7 @@ repositories:
 
 releases:
 - name: prom-norbac-ubuntu
+  createNamespace: true 
   namespace: prometheus
   chart: prometheus-community/prometheus
   set:
@@ -13,6 +14,7 @@ releases:
     value: false
 - name: nginx
   namespace: nginx
+  createNamespace: true 
   chart: bitnami/nginx
   set:
   - name: controller.replicaCount
